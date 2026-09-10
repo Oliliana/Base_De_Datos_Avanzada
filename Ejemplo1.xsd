@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Olga Liliana Ruvalcaba Mata -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Tienda">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Productos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Producto" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="xs:string"/>
+                    <xs:element name="Articulo" type="xs:string"/>
+                    <xs:element name="Precio" type="xs:decimal"/>
+                    <xs:element name="Existencias" type="xs:int"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,7 @@
+<!ELEMENT Tienda (Productos)>
+<!ELEMENT Productos (Producto+)>
+<!ELEMENT Producto (ID, Articulo, Precio, Existencias)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT Articulo (#PCDATA)>
+<!ELEMENT Precio (#PCDATA)> 
+<!ELEMENT Existencias (#PCDATA)>
